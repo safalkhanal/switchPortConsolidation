@@ -1,0 +1,36 @@
+devices:
+  SafalCisco4:
+    type: 'router'
+    os: ios
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+        username: cisco
+    connections:
+      defaults:
+        class: 'unicon.Unicon'
+      cli:
+        ip: 192.168.1.246
+        port: 32772
+        protocol: telnet
+
+  SafalCisco6:
+    type: 'router'
+    os: ios
+    credentials:
+      default:
+        password: cisco
+        username: cisco
+      enable:
+        password: cisco
+        username: cisco
+    connections:
+      defaults:
+        class: 'unicon.Unicon'
+      cli:
+        ip: 192.168.1.246
+        port: 32774
+        protocol: telnet

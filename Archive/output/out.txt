@@ -1,0 +1,14 @@
+
+======================Change2 used switch===========================
+Port, VLAN, Connected MAC
+
+FastEthernet0/20,401,
+
+======================Change3 used switch===========================
+Port, VLAN, Connected MAC
+
+FastEthernet0/9,226,40:b0:34:45:54:0c
+
+==================source to target switch=======================
+FastEthernet0/20  ----->  GigabitEthernet1/0/1
+FastEthernet0/9  ----->  GigabitEthernet1/0/2

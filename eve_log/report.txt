@@ -1,0 +1,22 @@
+=======================Source connected/used port===================
+FastEthernet0/0
+===========================Target unused port=======================
+FastEthernet0/1
+FastEthernet1/0
+FastEthernet1/1
+FastEthernet1/2
+FastEthernet1/3
+FastEthernet1/4
+FastEthernet1/5
+FastEthernet1/6
+FastEthernet1/7
+FastEthernet1/8
+FastEthernet1/9
+FastEthernet1/10
+FastEthernet1/11
+FastEthernet1/12
+FastEthernet1/13
+FastEthernet1/14
+FastEthernet1/15
+=======================Source and target matching===================
+FastEthernet0/0  ----->  FastEthernet0/1

@@ -1,0 +1,23 @@
+---
+  - hosts: localhost
+    tasks:
+    - name: Run main script which compares the switch csv file
+      command: python3 source_interface.py
+    - name: Run main script which compares the switch csv file
+      command: python3 target_interface.py
+    - name: Display analysis report
+      command: python3 generatebody.py
+      register: report
+    - name: Email report
+      mail:
+        host: smtp.gmail.com
+        port: 587
+        username: respirotest0@gmail.com
+        password: respiroemail
+        to: skhanal@respiro.com.au
+        subject: log file from source and target switch comparision
+        body: '{{ report.stdout }}'
+        attach:
+        - output/out.txt
+        - output/source.txt
+        - output/target.txt
