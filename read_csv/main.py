@@ -5,16 +5,16 @@ import csv
 
 log = logging.getLogger(__name__)
 port = {'source': [], 'target': []}
-source_file = 'output/source.txt'
-target_file = 'output/target.txt'
-log_file = 'output/out.txt'
+source_file = './output/source.txt'
+target_file = './output/target.txt'
+log_file = './output/out.txt'
 
 
 class CompareChange2(aetest.Testcase):
     @aetest.test
     def comparechange2(self):
         log.info("Opening change2 source switch file....")
-        with open('files/chanegs2.csv', 'r') as details:
+        with open('./files/chanegs2.csv', 'r') as details:
             switch2 = csv.DictReader(details, delimiter=",")
             s = open(source_file, 'w')
             f = open(log_file, 'w')
@@ -38,7 +38,7 @@ class CompareChange3(aetest.Testcase):
     @aetest.test
     def comparechange3(self):
         log.info("Opening change3 source switch file....")
-        with open('files/chanegs3.csv', 'r') as details:
+        with open('./files/chanegs3.csv', 'r') as details:
             switch2 = csv.DictReader(details, delimiter=",")
             s = open(source_file, 'a')
             f = open(log_file, 'a')
@@ -60,9 +60,9 @@ class CompareChange3(aetest.Testcase):
 
 class CompareChange6(aetest.Testcase):
     @aetest.test
-    def comparechange6(self):
+    def comparechange6s(self):
         log.info("Opening change6 target switch file....")
-        with open('files/chanegs6.csv', 'r') as details:
+        with open('./files/chanegs6.csv', 'r') as details:
             switch2 = csv.DictReader(details, delimiter=",")
             t = open(target_file, 'w')
             f = open(log_file, 'a')

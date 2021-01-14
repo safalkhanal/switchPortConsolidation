@@ -3,7 +3,7 @@ from pyats import aetest
 from pyats.topology import loader
 
 log = logging.getLogger(__name__)
-testbed = loader.load('testbed.yml')
+testbed = loader.load('testbed.yaml')
 device1 = testbed.devices['SafalCisco6']
 
 
